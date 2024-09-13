@@ -25,29 +25,39 @@ class mainView:
         self.image_label.pack(side=ctk.LEFT, pady=10)
 
         # Crear un frame
-        frame = ctk.CTkFrame(master=self.root)
-        frame.pack(side=tk.RIGHT, pady=20, padx=40, fill='y', expand=False)
+        self.frame = ctk.CTkFrame(master=self.root)
+        self.frame.pack(side=tk.RIGHT, pady=20, padx=40, fill='y', expand=False)
 
         # Configurar el label dentro del frame
-        label = ctk.CTkLabel(master=frame, text='Verificacion de usuario')
-        label.pack(pady=12, padx=10)
+        self.label = ctk.CTkLabel(master=self.frame, text='Verificacion de usuario')
+        self.label.pack(pady=12, padx=10)
 
         # Crear la caja de texto para el nombre de usuario
-        self.user_entry = ctk.CTkEntry(master=frame, placeholder_text="Nombre de usuario")
+        self.user_entry = ctk.CTkEntry(master=self.frame, placeholder_text="Nombre de usuario")
         self.user_entry.pack(pady=12, padx=10)
 
         # Crear la caja de texto para la contraseña
-        self.user_pass = ctk.CTkEntry(master=frame, placeholder_text="Contraseña", show="*")
+        self.user_pass = ctk.CTkEntry(master=self.frame, placeholder_text="Contraseña", show="*")
         self.user_pass.pack(pady=12, padx=10)
 
         # Crear el botón de login
-        button = ctk.CTkButton(master=frame, text='Login', corner_radius=32)
-        button.pack(pady=12, padx=10)
+        self.button_Login = ctk.CTkButton(master=self.frame, text='Login', corner_radius=32, command= self.controller.log_in)
+        self.button_Login.pack(pady=12, padx=10)
 
     def update_image_label(self, img):
-        # Redimensionar la imagen al tamaño deseado
-        resized_image = img.resize((250, 250), Image.Resampling.LANCZOS)
-        # Convertir la imagen redimensionada a CTkImage
-        self.ctk_image = ctk.CTkImage(resized_image, size=(250, 250))
-        # Actualizar la imagen en el widget
-        self.image_label.configure(image=self.ctk_image)
+        if self.controller.active:
+            # Redimensionar la imagen al tamaño deseado
+            resized_image = img.resize((250, 250), Image.Resampling.LANCZOS)
+            # Convertir la imagen redimensionada a CTkImage
+            self.ctk_image = ctk.CTkImage(resized_image, size=(250, 250))
+            # Actualizar la imagen en el widget
+            self.image_label.configure(image=self.ctk_image)
+    
+    def destroy_view(self):
+        # Destruir todos los elementos creados por esta vista
+        self.image_label.destroy()  
+        self.user_entry.destroy()   # Destruir la caja de texto del usuario
+        self.user_pass.destroy()    
+        self.label.destroy()
+        self.button_Login.destroy()
+        self.frame.destroy()
