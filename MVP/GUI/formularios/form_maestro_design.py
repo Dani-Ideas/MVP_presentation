@@ -12,9 +12,9 @@ class FormularioMaestroDesign(tk.Tk):
 
     def __init__(self):
         super().__init__()
-        self.logo = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'imagenes', 'logo.png'), (560, 136))
-        self.perfil = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'imagenes', 'Perfil.png'), (100, 100))
-        self.img_sitio_construccion = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'imagenes', 'sitio_construccion.png'), (200, 200))
+        self.logo = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'images', 'logo.png'), (560, 136))
+        self.perfil = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'images', 'Perfil.png'), (100, 100))
+        self.img_sitio_construccion = util_img.leer_imagen(os.path.join(os.path.dirname(__file__), '..', 'images', 'sitio_construccion.png'), (200, 200))
         self.config_window()
         self.paneles()
         self.controles_barra_superior()        
@@ -26,7 +26,7 @@ class FormularioMaestroDesign(tk.Tk):
         self.title('Corparacion Alavez')
     
         # Ruta al icono en formato PNG
-        icon_image_path = os.path.join(os.path.dirname(__file__), '..', 'imagenes', 'logo.png')
+        icon_image_path = os.path.join(os.path.dirname(__file__), '..', 'images', 'logo.png')
     
         # Establecer el icono de la ventana usando iconphoto
         self.iconphoto(True, tk.PhotoImage(file=icon_image_path))
@@ -50,25 +50,26 @@ class FormularioMaestroDesign(tk.Tk):
     
     def controles_barra_superior(self):
         # Configuración de la barra superior
-        font_awesome = font.Font(family='FontAwesome', size=12)
-
-        # Etiqueta de título
-        self.labelTitulo = tk.Label(self.barra_superior, text="Autodidacta")
-        self.labelTitulo.config(fg="#fff", font=(
-            "Roboto", 15), bg=COLOR_BARRA_SUPERIOR, pady=10, width=16)
-        self.labelTitulo.pack(side=tk.LEFT)
+        font_awesome = font.Font(family='FontAwesome', size=16)
 
         # Botón del menú lateral
-        self.buttonMenuLateral = tk.Button(self.barra_superior, text="\uf0c9", font=font_awesome,
+        self.buttonMenuLateral = tk.Button(self.barra_superior, text="☰", font=font_awesome,
                                            command=self.toggle_panel, bd=0, bg=COLOR_BARRA_SUPERIOR, fg="white")
         self.buttonMenuLateral.pack(side=tk.LEFT)
 
+        # Etiqueta de título
+        self.labelTitulo = tk.Label(self.barra_superior, text="Corporativo Alavez")
+        self.labelTitulo.config(fg="#fff", font=(
+            "Roboto", 15), bg=COLOR_BARRA_SUPERIOR, pady=10, width=20)
+        self.labelTitulo.pack(side=tk.LEFT)
+
         # Etiqueta de informacion
         self.labelTitulo = tk.Label(
-            self.barra_superior, text="servicio@autodidacta.mx")
+            # despues hace la funcion del nombre del user
+            self.barra_superior, text="Aqui va el nobre del empleado")
         self.labelTitulo.config(fg="#fff", font=(
             "Roboto", 10), bg=COLOR_BARRA_SUPERIOR, padx=10, width=20)
-        self.labelTitulo.pack(side=tk.RIGHT)
+        self.labelTitulo.pack(side=tk.RIGHT,ipady=5)
     
     def controles_menu_lateral(self):
         # Configuración del menú lateral
@@ -86,12 +87,11 @@ class FormularioMaestroDesign(tk.Tk):
         self.buttonDashBoard = tk.Button(self.menu_lateral)        
         self.buttonProfile = tk.Button(self.menu_lateral)        
         self.buttonPicture = tk.Button(self.menu_lateral)
-        self.buttonInfo = tk.Button(self.menu_lateral)        
         self.buttonSettings = tk.Button(self.menu_lateral)
 
         buttons_info = [
             ("Productivity", "\uf109", self.buttonDashBoard,self.abrir_panel_graficas ),
-            ("Profile", "\uf007", self.buttonProfile,self.abrir_panel_en_construccion),
+            ("Schedule", "\uf007", self.buttonProfile,self.abrir_panel_en_construccion),
             ("Picture", "\uf03e", self.buttonPicture,self.abrir_panel_en_construccion),
             ("Settings", "\uf013", self.buttonSettings,self.abrir_panel_en_construccion)
         ]

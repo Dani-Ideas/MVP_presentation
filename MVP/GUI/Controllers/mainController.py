@@ -1,7 +1,6 @@
-import customtkinter as ctk
 from Models.mainModel import mainModel
-from Views.mainView import mainView
-from Controllers.schedulePanelController import schedulePanelController
+from Views.log_in_View import log_in_View
+from Controllers.panelControl_controller import panelControl_controller
 
 class mainController:
     active = True
@@ -10,7 +9,7 @@ class mainController:
         self.root = root
         # Inicializar el modelo y la vista
         self.model = mainModel()
-        self.view = mainView(root, self)
+        self.view = log_in_View(root, self)
         
         # Configuración específica de la animación de brillo
         self.root.bind('<Motion>', self.on_mouse_move)
@@ -39,13 +38,4 @@ class mainController:
     def log_in(self):
         mainController.active = False
         self.view.destroy_view()
-        schedulePanelController(self.root)
-
-if __name__ == "__main__":
-    root = ctk.CTk()
-    root.title("Login")
-
-    # Instanciar el controlador
-    app = mainController(root)
-    
-    root.mainloop()
+        panelControl_controller(self.root)

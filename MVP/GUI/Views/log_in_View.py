@@ -3,21 +3,21 @@ import tkinter as tk
 import os
 from PIL import Image
 
-class mainView:
+class log_in_View:
     def __init__(self, root, controller):
-        self.root = root  
+        self.root = root
+          
         self.controller = controller
         self.setup_ui()
 
     def setup_ui(self):
         ctk.set_appearance_mode("dark") 
         ctk.set_default_color_theme("blue") 
-        # Título de la ventana
         self.root.title("Corporativo Alavez")
         self.root.geometry("800x550")
 
         # Cargar una imagen usando una ruta relativa
-        self.image = Image.open(os.path.join(os.path.dirname(__file__), "..", "assets", "6089dddf2058ac387e4d37e2.png"))
+        self.image = Image.open(os.path.join(os.path.dirname(__file__), "..", "util/image", "photo.png"))
         self.ctk_image = ctk.CTkImage(self.image, size=(250, 250))  # Usar CTkImage en lugar de PhotoImage
 
         # Colocar la imagen en la ventana
