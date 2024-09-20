@@ -13,7 +13,7 @@ class panel_control_View:
         
         # Carga de imágenes
         self.logo = util_img.leer_imagen_custom(os.path.join(os.path.dirname(__file__), '..', 'images', 'logo.png'), (560, 136))
-        self.perfil = util_img.leer_imagen_custom(os.path.join(os.path.dirname(__file__), '..', 'images', 'Perfil.png'), (100, 100))
+        self.perfil = util_img.leer_imagen_custom(os.path.join(os.path.dirname(__file__), '..', 'images', 'photo_avatar_circle.png'), (100, 100))
         self.img_sitio_construccion = util_img.leer_imagen_custom(os.path.join(os.path.dirname(__file__), '..', 'images', 'sitio_construccion.png'), (200, 200))
 
         # Configuración de la ventana
@@ -59,8 +59,8 @@ class panel_control_View:
         self.labelTitulo.pack(side=ctk.LEFT)
     
         # Nombre del empleado
-        self.labelEmpleado = ctk.CTkLabel(self.barra_superior, text="NombreSinAsignar", text_color="white", font=roboto_font_10, fg_color=COLOR_BARRA_SUPERIOR)
-        self.labelEmpleado.pack(side=ctk.RIGHT, ipady=5)
+        self.labelEmpleado = ctk.CTkLabel(self.barra_superior, text="Angel Alavez", text_color="white", font=roboto_font_10, fg_color=COLOR_BARRA_SUPERIOR)
+        self.labelEmpleado.pack(side=ctk.RIGHT, pady=10)
 
     def controles_menu_lateral(self):
         # Configuración del menú lateral
@@ -74,6 +74,10 @@ class panel_control_View:
         self.buttonDashBoard = ctk.CTkButton(self.menu_lateral, text="  \uf109    Productivity", font=font_awesome,
                                              fg_color=COLOR_MENU_LATERAL, text_color="white", width=200, height=40, command=self.controller.abrir_panel_graficas)
         self.buttonDashBoard.pack(side=ctk.TOP)
+
+        self.buttonSettings = ctk.CTkButton(self.menu_lateral, text="  \uf013    Schedule", font=font_awesome,
+                                            fg_color=COLOR_MENU_LATERAL, text_color="white", width=200, height=40, command=self.controller.abrir_panel_en_construccion)
+        self.buttonSettings.pack(side=ctk.TOP)
 
         self.buttonSettings = ctk.CTkButton(self.menu_lateral, text="  \uf013    Settings", font=font_awesome,
                                             fg_color=COLOR_MENU_LATERAL, text_color="white", width=200, height=40, command=self.controller.abrir_panel_en_construccion)
