@@ -1,6 +1,7 @@
 import json
 from datetime import datetime as dt
-from MVP.GUI.Models.Employee import Employee
+from GUI.Models.EmplyeeModel import EmployeeModel
+from GUI.Models.ProcessModel import ProcessModel
 
 class EmployeeAdapter:
     @staticmethod
@@ -19,7 +20,7 @@ class EmployeeAdapter:
         lineNoMonitor = EmployeeAdapter._process_line_data(data['lineNoMonitor'])
 
         # Retornar el objeto Employee
-        return Employee(
+        return EmployeeModel(
             id=data['id'],
             name=data['name'],
             workStartHour=workStartHour,
@@ -36,8 +37,17 @@ class EmployeeAdapter:
         for timestamp, details in line_data.items():
             # Convertir el timestamp a objeto datetime
             fecha = dt.fromisoformat(timestamp)
-            # Agregar la fecha y los detalles al array bidimensional
-            array_bidimensional.append([fecha, details])
+            # Crear una instancia de ProcessModel con los detalles
+            process = ProcessModel(
+                id_process=details["id_process"],
+                name=details["name"],
+                id_block_Process=details["id_block_Process"],
+                need_monitoring=details["need_monitoring"],
+                standardtime_minutes=details["standardtime_minutes"],
+                simulan=details["simulan"]
+            )
+            # Agregar la fecha y el objeto ProcessModel al array bidimensional
+            array_bidimensional.append([fecha, process])
         return array_bidimensional
 
     @staticmethod

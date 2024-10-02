@@ -179,3 +179,11 @@ Configuraciones: Considera agregar una carpeta config para manejar configuracion
 Logging: Implementa un sistema de logging para monitorear y depurar la aplicación.
 Documentación: Mantén una buena documentación dentro del código y posiblemente en archivos README para facilitar la comprensión del proyecto.
 Esta estructura te proporcionará una base sólida para desarrollar tu aplicación GUI de manera ordenada y profesional, facilitando futuras expansiones y mantenimientos.
+
+
+
+encripta en api rest
+Uso de blue prints
+Flask(logo de chile)
+Future (documentacion basada en funcionalidades)
+Preparada para multiconexiones y multiprocesamieto con operacione asicronas

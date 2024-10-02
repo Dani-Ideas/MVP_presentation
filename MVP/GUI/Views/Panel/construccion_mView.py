@@ -2,7 +2,7 @@ import tkinter as tk
 import customtkinter as ctk
 from config import COLOR_CUERPO_PRINCIPAL
 
-class FormularioSitioConstruccionDesign:
+class Construccion_mView:
 
     def __init__(self, panel_principal, logo):
         # Crear paneles: barra superior

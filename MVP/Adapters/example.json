@@ -1,0 +1,24 @@
+{"id_employ":1,"name":"escalvo",
+"workStartHour":8,"workStartMinute":0,
+"workEndHour":19,"workEndMinute":0,
+"lineMonitor":
+    {"2024-09-09T08:00":{"id_process":50,"idBelongsOrder":0,"id_block_Process":50,"name":"Beginning Work","need_monitoring":true,"standardtime_minutes":15,"simulan":false,"difficult":1.0},
+    "2024-09-09T08:16":{"id_process":1,"idBelongsOrder":1,"id_block_Process":1,"name":"Cotizar","need_monitoring":true,"standardtime_minutes":60,"simulan":false,"difficult":1.0},
+    "2024-09-09T09:16":{"id_process":2,"idBelongsOrder":1,"id_block_Process":2,"name":"Modelar3D","need_monitoring":true,"standardtime_minutes":120,"simulan":false,"difficult":1.0},
+    "2024-09-09T11:16":{"id_process":3,"idBelongsOrder":1,"id_block_Process":2,"name":"Modelar3D_ajuste","need_monitoring":true,"standardtime_minutes":30,"simulan":false,"difficult":1.0},
+    "2024-09-09T11:46":{"id_process":4,"idBelongsOrder":1,"id_block_Process":3,"name":"Imprimir3D_envio_archivo","need_monitoring":true,"standardtime_minutes":5,"simulan":true,"difficult":1.0},
+    "2024-09-09T11:51":{"id_process":5,"idBelongsOrder":1,"id_block_Process":3,"name":"Imprimir3D_prepar_impresora","need_monitoring":true,"standardtime_minutes":5,"simulan":true,"difficult":1.0},
+    "2024-09-09T13:56":{"id_process":7,"idBelongsOrder":1,"id_block_Process":3,"name":"Imprimir3D_quitar_soportes","need_monitoring":true,"standardtime_minutes":5,"simulan":true,"difficult":1.0},
+    "2024-09-09T14:01":{"id_process":8,"idBelongsOrder":1,"id_block_Process":4,"name":"Molde_fabricado","need_monitoring":true,"standardtime_minutes":120,"simulan":true,"difficult":1.0},
+    "2024-09-09T16:31":{"id_process":10,"idBelongsOrder":1,"id_block_Process":5,"name":"Inyeccion_inyeccion_molde","need_monitoring":true,"standardtime_minutes":1,"simulan":false,"difficult":1.0},
+    "2024-09-09T16:32":{"id_process":11,"idBelongsOrder":1,"id_block_Process":5,"name":"Inyeccion_inyeccion_molde_enfriamieto_cera","need_monitoring":true,"standardtime_minutes":3,"simulan":true,"difficult":1.0},
+    "2024-09-09T16:36":{"id_process":1,"idBelongsOrder":1,"id_block_Process":1,"name":"Cotizar","need_monitoring":true,"standardtime_minutes":60,"simulan":false,"difficult":1.0},
+    "2024-09-09T17:36":{"id_process":2,"idBelongsOrder":1,"id_block_Process":2,"name":"Modelar3D","need_monitoring":true,"standardtime_minutes":120,"simulan":false,"difficult":1.0},
+    "2024-09-09T19:00":{"id_process":51,"idBelongsOrder":0,"id_block_Process":51,"name":"Ending Work","need_monitoring":true,"standardtime_minutes":15,"simulan":false,"difficult":1.0}},
+"lineNoMonitor":{
+    "2024-09-09T08:00":{"id_process":50,"idBelongsOrder":0,"id_block_Process":50,"name":"Beginning Work","need_monitoring":true,"standardtime_minutes":15,"simulan":false,"difficult":1.0},
+    "2024-09-09T11:56":{"id_process":6,"idBelongsOrder":1,"id_block_Process":3,"name":"Imprimir3D_imprimiendo","need_monitoring":false,"standardtime_minutes":120,"simulan":true,"difficult":1.0},
+    "2024-09-09T16:01":{"id_process":9,"idBelongsOrder":1,"id_block_Process":5,"name":"Inyeccion_calentamiento_inyector","need_monitoring":false,"standardtime_minutes":30,"simulan":true,"difficult":1.0},
+    "2024-09-09T19:00":{"id_process":51,"idBelongsOrder":0,"id_block_Process":50,"name":"Ending Work","need_monitoring":true,"standardtime_minutes":15,"simulan":false,"difficult":1.0}},
+"currentTimeEmploy":"2024-09-09T09:07:38.48145763"
+}

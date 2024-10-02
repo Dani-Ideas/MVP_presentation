@@ -76,7 +76,7 @@ class panel_control_View:
         self.buttonDashBoard.pack(side=ctk.TOP)
 
         self.buttonSettings = ctk.CTkButton(self.menu_lateral, text="  \uf013    Schedule", font=font_awesome,
-                                            fg_color=COLOR_MENU_LATERAL, text_color="white", width=200, height=40, command=self.controller.abrir_panel_en_construccion)
+                                            fg_color=COLOR_MENU_LATERAL, text_color="white", width=200, height=40, command=self.controller.abrir_panel_horario)
         self.buttonSettings.pack(side=ctk.TOP)
 
         self.buttonSettings = ctk.CTkButton(self.menu_lateral, text="  \uf013    Settings", font=font_awesome,
