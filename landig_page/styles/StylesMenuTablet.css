@@ -1,0 +1,29 @@
+#bar_search {
+    display: none;
+}
+.product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.labe_menu{
+    display: none;
+}
+.ul_links{
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.li_a_menu{
+    font-size: 1.2rem;
+    transition: all .3s;
+    padding: .2rem .7rem;
+}
+.li_a_menu:hover{
+    background-color: #921111;
+}
+footer>nav>ul{
+    gap: 1rem;
+}

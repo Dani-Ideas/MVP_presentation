@@ -1,0 +1,73 @@
+@keyframes slideBackground {
+    0%, 25% {
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/238264eb-7dc6-4916-a142-3b558473da6c/de63bwm-a8c4e590-05eb-41cb-a6d5-47085681fc0f.jpg');
+    }
+    25%, 50% {
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/575ad3ee-5d86-473c-885e-9dd1a44bb950/dbbzlu8-399b4462-3d13-4fdd-a4e3-c3dedab4835c.jpg/v1/fit/w_800,h_543,q_70,strp/food_items_by_nimphradora_dbbzlu8-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQzIiwicGF0aCI6IlwvZlwvNTc1YWQzZWUtNWQ4Ni00NzNjLTg4NWUtOWRkMWE0NGJiOTUwXC9kYmJ6bHU4LTM5OWI0NDYyLTNkMTMtNGZkZC1hNGUzLWMzZGVkYWI0ODM1Yy5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.2rKhEiWef7g401yRIm_L4zzGZOKsiZggi3hr2cqI8v8');
+    }
+    50%, 75% {
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/711de29d-e083-452f-ae49-162d46144f2a/d8yeoqw-9bc51bdb-4409-4413-bc4e-5553083b4807.jpg/v1/fit/w_800,h_564,q_70,strp/food__by_yevonyasuko_d8yeoqw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTY0IiwicGF0aCI6IlwvZlwvNzExZGUyOWQtZTA4My00NTJmLWFlNDktMTYyZDQ2MTQ0ZjJhXC9kOHllb3F3LTliYzUxYmRiLTQ0MDktNDQxMy1iYzRlLTU1NTMwODNiNDgwNy5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ZZBAkxmj-D6tESu-0T7d9P4Y2HfzG_e4zF0eJYOVxrw');
+    }
+    75%, 100% {
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3c81bf4c-53df-47dd-bd2d-0015c90567ba/dhmqg6a-e9086ba1-5346-490c-b81f-f62db1a49469.jpg/v1/fill/w_894,h_894,q_70,strp/chili_dish_digital_art_food_3d_hd__by_xrebelyellx_dhmqg6a-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNjODFiZjRjLTUzZGYtNDdkZC1iZDJkLTAwMTVjOTA1NjdiYVwvZGhtcWc2YS1lOTA4NmJhMS01MzQ2LTQ5MGMtYjgxZi1mNjJkYjFhNDk0NjkuanBnIiwiaGVpZ2h0IjoiPD05MDAiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzNjODFiZjRjLTUzZGYtNDdkZC1iZDJkLTAwMTVjOTA1NjdiYVwveHJlYmVseWVsbHgtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.OOmqtBnFyLJn6KWUHhdUi99IugW-aVqautp5fwh9jUo');
+    }
+}
+
+.labe_menu{
+    display: none;
+}
+.ul_links{
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.li_a_menu{
+    font-size: 1.2rem;
+    transition: all .3s;
+    padding: .2rem .7rem;
+}
+.li_a_menu:hover{
+    background-color: #921111;
+}
+footer>nav>ul{
+    gap: 1rem;
+}
+
+
+.icon-wrapper {
+    gap: 2rem;
+}
+
+#W1 {
+    background: none; /* Eliminar imagen fija en fondo para tablet */
+}
+
+/* Slider de fondo para tablet */
+#W1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 12s infinite;
+    z-index: 0;
+}
+/* Fondo animado de imágenes */
+#W1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 12s infinite;
+    z-index: -1; /* Asegura que el fondo quede detrás del filtro oscuro */
+}

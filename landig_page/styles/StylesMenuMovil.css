@@ -1,0 +1,36 @@
+header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+main {
+    min-height: calc(var(--altura_header) + var(--altura_main));
+}
+
+footer {
+    min-height: calc(2 * var(--altura_footer));
+}
+
+.labe_menu{
+    display: none;
+}
+
+.ul_links {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+#bar_search {
+    display: none;
+}
+
+
+.product-grid {
+    grid-template-columns: repeat(2, 1fr);
+}

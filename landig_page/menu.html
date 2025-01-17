@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Este codigo fue realizado por el alumno Daniel NoC. 423065534(no pongo mi nombre por motivos de seguridad), 
+ para el grupo 1507, para el periodo 2025-I para la calse de programacion Web 1 imaprtida por Candelario A. J. L.
+ esta hecho exclusivamente hecho para la evaluacionn del proyecto final, cualqueir uso fuera de este sera considerado como violacion a la propiedad intelectual 
+ -->
+ <!-- Notas para que el profesor considere, este proyecto fue creado con la filosofia movil-firts
+  así pues tambien fue sometido a pruebas com ligth-house para que lo tome en consideracion y la ejecute en su maquina
+  ya que hubo un par de examenes en donde  no sali muy bien en calificacion-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crunch-eat</title>
+        <link rel="icon" href="./images/Crunch-eat.ico" type="image/x-icon">
+        
+        <!-- Estilos generales -->
+        <link rel="stylesheet" href="./styles/StylesGeneral.css">
+        
+        <!-- Estilo para tabletas y PC-->
+        <link rel="stylesheet" href="./styles/StylesMenuTablet.css" media="screen and (min-width: 768px)">
+        
+        <!-- Estilo para dispositivos móviles -->
+        <link rel="stylesheet" href="./styles/StylesMenuMovil.css" media="screen and (max-width: 767px)">
+    </head>
+    
+<body>
+    <header>
+        <nav> 
+            <section class="grow1" id="logo" aria-labelledby="logo-label">
+                <picture>
+                    <!-- Imagen para pantallas de alta resolución (por ejemplo, Retina) -->
+                    <source srcset="images/Crunch-eat_transparent-Medium.png" media="(min-width: 1025px)" type="image/png" alt="Logo de Crunch-eat" loading="lazy">
+                    <!-- Imagen para tabletas -->
+                    <source srcset="images/Crunch-eat_transparent-Medium.png" media="(min-width: 768px) and (max-width: 1024px)" type="image/png" alt="Logo de Crunch-eat" loading="lazy">
+                    <!-- Imagen para dispositivos móviles -->
+                    <source srcset="images/Crunch-eat_transparent_mini.png" media="(max-width: 767px)" type="image/png" alt="Logo de Crunch-eat" loading="lazy">
+                    <!-- Imagen predeterminada si ninguna de las anteriores coincide -->
+                    <img src="images/Crunch-eat_transparent-Medium.png" alt="Descripción de la imagen">
+                </picture>
+            </section>
+            
+            <section class="grow1" id="bar_search" aria-label="Barra de búsqueda">
+                <form role="search" action="/buscar" method="get">
+                    <input type="text" name="query" placeholder="Menu" aria-label="barra de busqueda de Crunch-eat">
+                    <button type="submit">
+                        <img src="./images/simbol_search.ico" alt="simbol search">
+                    </button>
+                </form>
+            </section>        
+
+            <label class="labe_menu" for="icon_menu">
+                <img src="./images/menu.ico" alt="simbol menu">
+            </label>
+            <input class="chBox_menu" type="checkbox" name="" id="icon_menu">
+
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="#" class="li_a_menu">Tus promociones</a>
+                </li>
+                <li class="li_links">
+                    <a href="#" class="li_a_menu">Inicio</a>
+                </li>
+                <li class="li_links">
+                    <a href="#" class="li_a_menu">Eventos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="icon-carousel" id="W2" aria-labelleedby="Explorador de menu principales categorias">
+            <div class="icon-wrapper">
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/vegetables.png" alt="Icono 1">
+                        <p>Vegano</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/diet.png" alt="Icono 2">
+                        <p>Desayuno</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/dish.png" alt="Icono 3">
+                        <p>Comida</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/masala-dosa.png" alt="Icono 4">
+                        <p>menu del día</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/fast-food.png" alt="Icono 5">
+                        <p>Comida rapida</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/dining-table.png" alt="Icono 6">
+                        <p>Gisados</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./menu.html">
+                        <img src="./images/take-away.png" alt="Icono 7">
+                        <p>Paquetes</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card_menu" id="W1_menu">
+            <h2>Categoria de platillo</h2>
+            <div class="product-grid">
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ecea297-ab6c-4294-aa2e-e7511b345b15/d878zfe-40b45963-d8dc-4276-b303-054a2216e553.png/v1/fit/w_375,h_276/22112014_by_glaciaru_d878zfe-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTg4IiwicGF0aCI6IlwvZlwvNGVjZWEyOTctYWI2Yy00Mjk0LWFhMmUtZTc1MTFiMzQ1YjE1XC9kODc4emZlLTQwYjQ1OTYzLWQ4ZGMtNDI3Ni1iMzAzLTA1NGEyMjE2ZTU1My5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.mOhWVMpYPJ-zrdfm6fHmSw00Z7oqzgC0zsQG73KY2A4" alt="Producto 1">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 1</h2>
+                    </div>
+                </a>
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d68aec44-344d-4190-a8f0-120cf46940e6/dggbtbn-241b921e-69f2-4629-88ff-b4450002f8ac.jpg/v1/fill/w_622,h_350,q_70,strp/spicy_glaze_cascade___food74_by_artbluespirit_dggbtbn-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2Q2OGFlYzQ0LTM0NGQtNDE5MC1hOGYwLTEyMGNmNDY5NDBlNlwvZGdnYnRibi0yNDFiOTIxZS02OWYyLTQ2MjktODhmZi1iNDQ1MDAwMmY4YWMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-DKcfbdQDrkhRgDx4X_oYE1SljeXF1n70Vw9HPqDBMY" alt="Producto 2">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 2</h2>
+                    </div>
+                </a>
+        
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d68aec44-344d-4190-a8f0-120cf46940e6/dggbt94-4c5e2877-9a21-4c32-bcc0-c48bfcaad5cc.jpg/v1/fill/w_622,h_350,q_70,strp/tender_tidbits___food95_by_artbluespirit_dggbt94-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2Q2OGFlYzQ0LTM0NGQtNDE5MC1hOGYwLTEyMGNmNDY5NDBlNlwvZGdnYnQ5NC00YzVlMjg3Ny05YTIxLTRjMzItYmNjMC1jNDhiZmNhYWQ1Y2MuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mZb9qK3hsOLc7qWsnMoRKvFhI6yIileJqyLasUlry0E" alt="Producto 3">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 3</h2>
+                    </div>
+                </a>
+        
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65fb2beb-876f-4821-9cce-a568c4a85d4a/dfzjubt-ac6afe31-ea9d-481f-ad21-5bf5f36c7a76.png/v1/fill/w_894,h_894,q_70,strp/anime_food_by_secondhaven_dfzjubt-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzY1ZmIyYmViLTg3NmYtNDgyMS05Y2NlLWE1NjhjNGE4NWQ0YVwvZGZ6anVidC1hYzZhZmUzMS1lYTlkLTQ4MWYtYWQyMS01YmY1ZjM2YzdhNzYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cC0iyg2dv7bGsB4Ul5KuaehwFRcdTDy6njrJn9KFGMM" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 4</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/62d1f558-5666-45e4-a781-422ddd8ccd85/dei2okc-437b912e-7fc2-42f4-987f-9cbde5df0ce1.png/v1/fit/w_300,h_900,q_70,strp/brunch__speedpaint__by_charlatan_of_doom_dei2okc-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzYyZDFmNTU4LTU2NjYtNDVlNC1hNzgxLTQyMmRkZDhjY2Q4NVwvZGVpMm9rYy00MzdiOTEyZS03ZmMyLTQyZjQtOTg3Zi05Y2JkZTVkZjBjZTEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tgek8R4W5msSVNwe-oNj7u5K3V2Pg3rmcqORhLzT3q8" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 5</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f66e2b45-ad8f-4ed9-b199-42fdaf04f042/dd58zqv-6ad783e1-f3b3-4342-b6b5-9d6c63a47d81.png/v1/fit/w_300,h_900/earth_cake_by_hatschyuh_dd58zqv-300w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvZjY2ZTJiNDUtYWQ4Zi00ZWQ5LWIxOTktNDJmZGFmMDRmMDQyXC9kZDU4enF2LTZhZDc4M2UxLWYzYjMtNDM0Mi1iNmI1LTlkNmM2M2E0N2Q4MS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.cI9FNCejVu4EvhNsRu7tzePyP9gkcPbbNxURBoxSYbU" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 6</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0b02cbc0-2fbd-42cf-a1d3-5770342fdc35/dig0w2w-f24390bb-bca4-4af5-882e-e67d404ea684.jpg/v1/fill/w_438,h_250,q_70,strp/salad_with_colorful_food_closeup__by_rubyrot_dig0w2w-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBiMDJjYmMwLTJmYmQtNDJjZi1hMWQzLTU3NzAzNDJmZGMzNVwvZGlnMHcydy1mMjQzOTBiYi1iY2E0LTRhZjUtODgyZS1lNjdkNDA0ZWE2ODQuanBnIiwiaGVpZ2h0IjoiPD05MTUiLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8wYjAyY2JjMC0yZmJkLTQyY2YtYTFkMy01NzcwMzQyZmRjMzVcL3J1Ynlyb3QtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.NoQ-YMhg2ijB4eQkA6XXOYjDJRmiLwDb5jP55bRCqHg" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 7</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b700963e-6b73-4dde-82ac-5cab0d1c2ffc/dgoh8hm-61c10250-2d88-490f-bca4-085eed962804.jpg/v1/fit/w_300,h_900,q_70,strp/_pizza__by_blvrdthreads_dgoh8hm-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5MCIsInBhdGgiOiJcL2ZcL2I3MDA5NjNlLTZiNzMtNGRkZS04MmFjLTVjYWIwZDFjMmZmY1wvZGdvaDhobS02MWMxMDI1MC0yZDg4LTQ5MGYtYmNhNC0wODVlZWQ5NjI4MDQuanBnIiwid2lkdGgiOiI8PTE4OTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YR-FDj7loOGgL-rwWwgkpJ8c_Vz2i3T8JbmS04iQc8c" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 8</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/910c622f-bb22-4ad2-aeaf-57ca5340d21f/detwqcu-e7305b83-4406-4dbe-8a9c-c51cc5d047e0.jpg/v1/fit/w_300,h_800,q_70,strp/_novempurr_1___fast_food_by_mowendesigns_detwqcu-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvOTEwYzYyMmYtYmIyMi00YWQyLWFlYWYtNTdjYTUzNDBkMjFmXC9kZXR3cWN1LWU3MzA1YjgzLTQ0MDYtNGRiZS04YTljLWM1MWNjNWQwNDdlMC5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.CPbIIlSy-Sj8G6PdZcRXtYZIb5mHuHKIYu4ksFmoaFQ" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 9</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f55312b7-2398-4efb-9afa-bbdc4099c1f6/dd3qvti-f647cac7-22d7-4b12-bde8-276adebcd1bd.jpg/v1/fill/w_341,h_350,q_70,strp/sakura_sweets_dessert_by_blackkobu_dd3qvti-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA1MyIsInBhdGgiOiJcL2ZcL2Y1NTMxMmI3LTIzOTgtNGVmYi05YWZhLWJiZGM0MDk5YzFmNlwvZGQzcXZ0aS1mNjQ3Y2FjNy0yMmQ3LTRiMTItYmRlOC0yNzZhZGViY2QxYmQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5qFxi3d044YUnTXmmoTBBtMeP-gxTjXLom2fvt3rCXA" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 10</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f55312b7-2398-4efb-9afa-bbdc4099c1f6/dd3qvti-f647cac7-22d7-4b12-bde8-276adebcd1bd.jpg/v1/fill/w_341,h_350,q_70,strp/sakura_sweets_dessert_by_blackkobu_dd3qvti-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA1MyIsInBhdGgiOiJcL2ZcL2Y1NTMxMmI3LTIzOTgtNGVmYi05YWZhLWJiZGM0MDk5YzFmNlwvZGQzcXZ0aS1mNjQ3Y2FjNy0yMmQ3LTRiMTItYmRlOC0yNzZhZGViY2QxYmQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5qFxi3d044YUnTXmmoTBBtMeP-gxTjXLom2fvt3rCXA" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 11</h2>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4069ba8a-c440-40d9-8e5b-39edf46097b3/dfzuz3z-6574f1f3-fe57-49f9-8a11-abb6ceb77697.png/v1/fit/w_300,h_900,q_70,strp/3d_sweet_food_dessert__13_by_floturos_dfzuz3z-300w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQwNjliYThhLWM0NDAtNDBkOS04ZTViLTM5ZWRmNDYwOTdiM1wvZGZ6dXozei02NTc0ZjFmMy1mZTU3LTQ5ZjktOGExMS1hYmI2Y2ViNzc2OTcucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvNDA2OWJhOGEtYzQ0MC00MGQ5LThlNWItMzllZGY0NjA5N2IzXC9mbG90dXJvcy00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.-juOMHbDqJshSl8KbImETFoI8BJjbLbykJvSIbYq6Rs" alt="Producto 4">
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto 12</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <nav aria-label="Enlaces del pie de página">
+            <ul>
+                <li><a href="#about">Acerca de nosotros</a></li>
+                <li><a href="#customer-service">Servicio al cliente</a></li>
+                <li><a href="#privacy-policy">Política de privacidad</a></li>
+                <li><a href="#branches">Sucursales</a></li>
+                <li><a href="#terms">Términos y condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

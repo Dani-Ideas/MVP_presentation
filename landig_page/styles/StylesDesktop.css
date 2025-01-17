@@ -1,0 +1,101 @@
+@keyframes slideBackground {
+    0%, 25% {
+        background-image: url('https://lh3.googleusercontent.com/pw/AP1GczOpDpfYCJ3tSBh45CPrKWYUnn0tn0hEamCfk3PSNaXJXn_qnA_yHvCRlBrChJfTr4NBZimj00_cSMbk0SlvA6wHZLnMt-lchW-UNAFGvHFOXbI0W2yWaY5ZvI4dJlbgBXWZbRt-y3By92XShtmPJuekZA=w999-h999-s-no-gm');
+    }
+    25%, 50% {
+        background-image: url('https://imgs.search.brave.com/gy48YvzbuY1FGIWbfG96LGK2qumdUqxOhKsBYDpXodA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMC8w/NC8yMi8xOC8yMi9l/eGN1c2UtbWUtNTA3/OTQ0Ml82NDAuanBn');
+    }
+    50%, 75% {
+        background-image: url('https://imgs.search.brave.com/J0D707Orre2b6ZTAu3c0R96LvG9FAaSc74Xe98SILOQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc3Ry/ZXNzLWJhbGwtd2l0/aC1oYXBweS1zbWls/ZS1mYWNlLTgybzl1/ODNsMnBvZTdlMTEu/anBn');
+    }
+    75%, 100% {
+        background-image: url('https://imgs.search.brave.com/L3Md8IBPvE7sg8WqbImxJxaOFWCNsGwO7vN630_FNV4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY3V0/ZS1iYWxsLXdpdGgt/aGFwcHktc21pbGUt/ZmFjZS00YmRrOTM5/bm11aWdtM3NzLmpw/Zw');
+    }
+}
+
+.labe_menu{
+    display: none;
+}
+.ul_links{
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.link{
+    font-size: 1.2rem;
+    transition: all .3s;
+    padding: .2rem .7rem;
+}
+.link:hover{
+    background-color: #5f1192;
+}
+footer>nav>ul{
+    gap: 1.5rem;
+}
+
+
+
+#W1 {
+    background: none; /* Eliminar imagen fija en fondo para tablet */
+}
+
+/* Slider de fondo para tablet */
+#W1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 12s infinite;
+    z-index: -1;
+}
+.icon-carousel {
+    max-height: 120px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenedor de iconos */
+.icon-wrapper {
+    display: flex;
+    gap: 10px;
+    animation: scrollInfinite 30s linear infinite;
+    width: calc(110px * 14); /* Ajuste del ancho total según la cantidad de elementos */
+}
+
+/* Elementos individuales */
+.icon-item {
+    min-width: 110px;
+    height: 110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efecto de animación */
+@keyframes scrollInfinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Duplica el contenido para un desplazamiento continuo */
+.icon-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    background: inherit;
+}

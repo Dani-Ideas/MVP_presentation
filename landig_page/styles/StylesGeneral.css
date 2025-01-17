@@ -1,0 +1,352 @@
+/*Falta definir la paleta de colores*/
+:root {
+    --color_primario: #8527c3fd;
+    --color_primario_suave: #8527c383;
+    --color_blanco: #fff;
+    --altura_min: 100px;
+    --altura_header: 15vh;
+    --altura_main:70vh;
+    --altura_footer: 15vh;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+/*Configuracion basica*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.chBox_menu{
+    display: none;
+}
+
+body {
+    width: 100%;
+}
+
+header, main, footer {
+    min-height: var(--altura_min);
+}
+
+header { 
+    background-color: rgb(214, 218, 214);
+}
+
+main { 
+    grid-area: main;
+    background-color: rgb(236, 236, 236);
+    min-height: var(--altura_main);
+}
+
+footer { 
+    grid-area: footer;
+    background-color: grey;
+    height: var(--altura_footer);
+}
+
+footer>nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--altura_footer);
+}
+
+footer>nav>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*test to general*/
+
+header>nav{
+    width: 100%;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: var(--altura_header);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+body>main>section>img{
+    width: 100%;
+}
+
+#bar_search {
+    width: 55%;
+    height: 50%;
+    display: flex;
+    justify-content: center; 
+}
+
+#bar_search>form {
+    display: flex; 
+    width: 100%; 
+    max-width: 600px;
+    background-color: #f8f9fa; 
+    border-radius: 25px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+#bar_search>form>input[type="text"] {
+    flex: 1; 
+    padding-top: 0.75rem ; 
+    padding-right: 0rem;
+    padding-bottom: 0.75rem ;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 25px 0 0 25px; 
+    font-size: 0.8rem; 
+    outline: none; 
+}
+
+#bar_search>form>input[type="text"]::placeholder {
+    color: #a9a9a9; 
+}
+
+#bar_search>form>button {
+    padding: 0.75rem 1rem;
+    border: none; 
+    border-radius: 0 25px 25px 0;
+    background-color: #007bff; 
+    color: #ffffff; 
+    font-size: 0.8rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#bar_search>form>button>img{
+    width: 1.2rem;
+    height: 1.2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#bar_search>form>button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+/* Estilos para el carrusel */
+.icon-carousel {
+    max-height: 120px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+.icon-wrapper {
+    display: flex;
+}
+.icon-carousel::-webkit-scrollbar {
+    width: 0;
+}
+.icon-item {
+    min-width: 110px;
+    height: 110px;
+    text-align: center;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-item img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom: 5px;
+}
+.icon-item p {
+    margin: 0;
+}
+
+/*seccion de preguntas y respuestas frecuentes*/
+.accordion-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.accordion-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.accordion-toggle {
+    display: none;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px;
+}
+
+.accordion-header h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+.accordion-header>img{
+    max-width: 50px;
+    width: 7vw;
+}
+
+.accordion-toggle:checked + .accordion-header + .accordion-content {
+    display: block;
+}
+
+.accordion-toggle:checked+ .accordion-header>img{
+    transform: rotate(90deg);
+    transition: transform 0.3s 
+}
+
+#W1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+    background-color: black; /* Fondo oscuro como respaldo */
+    z-index: 1;
+}
+
+/* Filtro oscuro sobre las imágenes */
+#W1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Velo oscuro */
+    z-index: 0; /* Mantén el filtro sobre el fondo animado */
+}
+
+/* Contenido en el frente */
+#W1 * {
+    position: relative;
+    z-index: 3; 
+    padding: 20px;
+}
+
+#W1 button{
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+#W3{
+    max-height: 25vh;
+    display:flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#W3 img{
+    max-width: 25vw;
+}
+
+#W4 img{
+    width: 100vw;
+}
+
+#W5{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#W5>div img{
+    max-width: 30vw;
+}
+#W5>div p{
+    padding: 1rem;
+    max-width: 30vw
+}
+@media (max-width: 375px) {
+    #bar_search>form {
+        display: flex;
+        flex-direction: row;
+    }
+    #bar_search>form>button{
+        order: -1;
+    }
+}
+
+
+/*Estilos de menu Generales*/
+.product-grid {
+    display: grid;
+    gap: 16px;
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 150px;
+}
+
+.product-image img {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 1.1em;
+}
