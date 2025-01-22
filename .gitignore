@@ -1,14 +1,14 @@
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.webp
-*.svg
-*.ico
-*.bmp
-*.tiff
-*.tif
-*.apng
+#*.jpg
+#*.jpeg
+#*.png
+#*.gif
+#*.webp
+#*.svg
+#*.ico
+#*.bmp
+#*.tiff
+#*.tif
+#*.apng
 # Basic config to Django
 
 # Created by https://www.toptal.com/developers/gitignore/api/django
