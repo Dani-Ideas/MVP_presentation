@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: orange;
+    background-color: var(--color_teciario);
 
     transition: all .3s;
 }
@@ -33,7 +33,7 @@
 }
 
 .chBox_menu:checked + .ul_links {
-    height: calc(100vh - var(--altura_header));
+    height: calc(70vh - var(--altura_header));
 }
 .chBox_menu:checked + #W1 {
     z-index: -1;
@@ -44,15 +44,23 @@
     /*asegura que el menu se vea*/
 }
 
-#logo{
+#logo {
+    max-width: 50%;
+}
+
+#logo img{
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
 
 #W1{
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/238264eb-7dc6-4916-a142-3b558473da6c/de63bwm-a8c4e590-05eb-41cb-a6d5-47085681fc0f.jpg');
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczOg_M5IOYBJ6shd4z1ksEamJ8FpKGTmjs8FL_oWmLYBqr57wQ2pdiX6nvD2bqAcf_9KwDSappfOkgvAPALZ9fgcQQffEwG7PuI-tiVtCT-KAhAKASbQrCAKckcIfnS4zhLkuUUY6YzDsdREnBAfj874=w828-h999-s-no-gm?authuser=0');
     background-size: cover;
     background-position: center;
+}
+
+#W1-div >a:nth-child(1){
+    display: none;
 }
 
 #W3 {
