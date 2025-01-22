@@ -150,6 +150,7 @@ body>main>section>img{
     max-height: 40vh;
     border: 1px solid var(--color_secundario);
     overflow-x: auto;
+    padding-bottom: 5vh;
 }
 .icon-wrapper {
     display: flex;
