@@ -2,19 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{% load static %}
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Baristas</title>
-		<style>
-			:root {
-				--media-url: "{{ MEDIA_URL }}";
-			}
-		</style>
+		<title>Alavez</title>
 		<link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
 	</head>
 	<body>
@@ -31,7 +25,7 @@
 
 					<div class="container-logo">
 						<i class="fa-solid fa-mug-hot"></i>
-						<h1 class="logo"><a href="/">Baristas</a></h1>
+						<h1 class="logo"><a href="/">Alavez</a></h1>
 					</div>
 
 					<div class="container-user">
@@ -50,11 +44,11 @@
 					<i class="fa-solid fa-bars"></i>
 					<ul class="menu">
 						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Moca Helado</a></li>
-						<li><a href="#">Expreso</a></li>
-						<li><a href="#">Capuchino</a></li>
-						<li><a href="#">Más</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="#">Alta joyería</a></li>
+						<li><a href="#">Joyeía</a></li>
+						<li><a href="#">Regalos</a></li>
+						<li><a href="#">Descubre</a></li>
+						<li><a href="#">Conocenos</a></li>
 					</ul>
 
 					<form class="search-form">
@@ -69,8 +63,8 @@
 
 		<section class="banner" style="background-image: linear-gradient(100deg, #000000, #00000020), url('{{ MEDIA_URL }}images/banner.jpg');">
 			<div class="content-banner">
-				<p>Café Delicioso</p>
-				<h2>100% Natural <br />Café Fresco</h2>
+				<p>Para Febrero</p>
+				<h2>100% Plata Méxicana <br />Anillo</h2>
 				<a href="#">Comprar ahora</a>
 			</div>
 		</section>
@@ -81,7 +75,7 @@
 					<i class="fa-solid fa-plane-up"></i>
 					<div class="feature-content">
 						<span>Envío gratuito a nivel mundial</span>
-						<p>En pedido superior a $150</p>
+						<p>En pedido superior a $1,500</p>
 					</div>
 				</div>
 				<div class="card-feature">
@@ -111,15 +105,15 @@
 				<h1 class="heading-1">Mejores Categorías</h1>
 				<div class="container-categories">
 					<div class="card-category category-moca" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/moca-category.jpg');">
-						<p>Café moca</p>
+						<p>Anillos</p>
 						<span>Ver más</span>
 					</div>
 					<div class="card-category category-expreso" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/expreso-category.jpg');">
-						<p>Expreso Americano</p>
+						<p>Pulceras</p>
 						<span>Ver más</span>
 					</div>
 					<div class="card-category category-capuchino" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/capuchino-category.jpg');">
-						<p>Capuchino</p>
+						<p>Anillos de Boda</p>
 						<span>Ver más</span>
 					</div>
 				</div>
@@ -160,7 +154,7 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Irish</h3>
+							<h3>roducto 1</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -195,7 +189,7 @@
 								<i class="fa-regular fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Inglés</h3>
+							<h3>Producto 2</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -229,7 +223,7 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
 							</div>
-							<h3>Cafe Australiano</h3>
+							<h3>Producto 3</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -260,7 +254,7 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Helado</h3>
+							<h3>Producto 4</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -295,7 +289,7 @@
 			</section>
 
 			<section class="container specials">
-				<h1 class="heading-1">Especiales</h1>
+				<h1 class="heading-1">Colecciónes</h1>
 
 				<div class="container-products">
 					<!-- Producto 1 -->
