@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'jazzmin',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # custom apps
     'core',
+    'userauths', 
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Settings Jazzmin framework
+
+JAZZMIN_SETTINGS = {
+    'site_header': "Alavez Shop",
+    'site_brand' : "Your order, we deliver",
+    'site_logo'  : "assets/img/brand/logo.ico",
+    'copyright'  : "alavez-shop.com",
+}
+
+AUTH_USER_MODEL = 'userauths.User'

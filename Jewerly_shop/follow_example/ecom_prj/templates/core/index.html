@@ -1,596 +1,466 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Alavez</title>
-		<link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
-	</head>
-	<body>
-		<header>
-			<div class="container-hero">
-				<div class="container hero">
-					<div class="customer-support">
-						<i class="fa-solid fa-headset"></i>
-						<div class="content-customer-support">
-							<span class="text">Soporte al cliente</span>
-							<span class="number">123-456-7890</span>
-						</div>
-					</div>
+{% extends "partials/base.html" %}
+{%load static%}
+{% block content %}
 
-					<div class="container-logo">
-						<i class="fa-solid fa-mug-hot"></i>
-						<h1 class="logo"><a href="/">Alavez</a></h1>
-					</div>
+<section class="banner" style="background-image: linear-gradient(100deg, #000000, #00000020), url('https://lh3.googleusercontent.com/pw/AP1GczMnq27-9QbUHz2p0hASeBPVhFWrEV-8ene9AXBjMbm5Tkf0V_c3NV-nqnxC8XBWFX77Y_YSq_SCNGNAOfWVLTqYWYUny8Zrf9tfrLKlv2rbi9Vq2i9WLjAtC0uTa_oKUANcUjtC2J-WGXVKYT802EJ11Q=w999-h999-s-no-gm');">
+	<!--{{ MEDIA_URL }}images/banner.jpg-->
+	<div class="content-banner">
+		<p>Para Febrero</p>
+		<h2>100% Plata Méxicana <br />Anillo</h2>
+		<a href="#">Comprar ahora</a>
+	</div>
+</section>
 
-					<div class="container-user">
-						<i class="fa-solid fa-user"></i>
+<main class="main-content">
+	<section class="container container-features">
+		<div class="card-feature">
+			<i class="fa-solid fa-plane-up"></i>
+			<div class="feature-content">
+				<span>Envío gratuito a nivel mundial</span>
+				<p>En pedido superior a $1,500</p>
+			</div>
+		</div>
+		<div class="card-feature">
+			<i class="fa-solid fa-wallet"></i>
+			<div class="feature-content">
+				<span>Contrareembolso</span>
+				<p>100% garantía de devolución de dinero</p>
+			</div>
+		</div>
+		<div class="card-feature">
+			<i class="fa-solid fa-gift"></i>
+			<div class="feature-content">
+				<span>Tarjeta regalo especial</span>
+				<p>Ofrece bonos especiales con regalo</p>
+			</div>
+		</div>
+		<div class="card-feature">
+			<i class="fa-solid fa-headset"></i>
+			<div class="feature-content">
+				<span>Servicio al cliente 24/7</span>
+				<p>LLámenos 24/7 al 123-456-7890</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container top-categories">
+		<h1 class="heading-1">Mejores Categorías</h1>
+		<div class="container-categories">
+			<div class="card-category category-moca" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/pw/AP1GczPaTh_V0ZSlgtRqwLTzfTFGENfu7umCphZ21z6GXZc07zCVxPQ2sEABYt8LScJ1UzvKjnMgPNpXL0FMl8JelI_vAvm1xH-tzI7Zi1IR8WfE8QvF1eYzSYxlOktXPtaoaULrs0g-5t0FSSDILbo5gB-G9Q=w1576-h999-s-no-gm');">
+				<!--{{ MEDIA_URL }}images/moca-category.jpg-->
+				<p>Anillos</p>
+				<span>Ver más</span>
+			</div>
+			<div class="card-category category-expreso" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/pw/AP1GczO4K6RrizEJCsWaEBCiINDWYXy_1W_fUDc4_ge4uhAr_szw_01Gn2QeQXPEmvV-HHAxV0hTVoWf1dsgplDW3NNyzjL4WXOmM_u0A57I0soQ4TC3UYzvJqiiWR5IqIM-EYxKFBWyyK7UmE-unAXE1CDfYQ=w999-h999-s-no-gm');">
+				<!--{{ MEDIA_URL }}images/expreso-category.jpg-->
+				<p>Pulceras</p>
+				<span>Ver más</span>
+			</div>
+			<div class="card-category category-capuchino" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/pw/AP1GczNGmEz0YIE5NDt7d4NiuWIkkq_WL8ApLnsKf6m3apoc9bUQetyCXSiiuvO9bWlS94FiSDHcqO-ksSYJJyhc-A3ZNJwu2lygn-1X4Rl95ARO81_9nj3_PLBak1IcQm_41dNzjqZmJE8I5i1nIKvxARDJAg=w750-h999-s-no-gm');">
+				<!--{{ MEDIA_URL }}images/capuchino-category.jpg-->
+				<p>Anillos de Boda</p>
+				<span>Ver más</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="container top-products">
+		<h1 class="heading-1">Mejores Productos</h1>
+
+		<div class="container-options">
+			<span class="active">Destacados</span>
+			<span>Más recientes</span>
+			<span>Mejores Vendidos</span>
+		</div>
+
+		<div class="container-products">
+			<!-- Producto 1 -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="https://lh3.googleusercontent.com/pw/AP1GczOpDpfYCJ3tSBh45CPrKWYUnn0tn0hEamCfk3PSNaXJXn_qnA_yHvCRlBrChJfTr4NBZimj00_cSMbk0SlvA6wHZLnMt-lchW-UNAFGvHFOXbI0W2yWaY5ZvI4dJlbgBXWZbRt-y3By92XShtmPJuekZA=w999-h999-s-no-gm" alt="Cafe Irish" />
+					<!--{{ MEDIA_URL }}images/cafe-irish.jpg-->
+					<span class="discount">-13%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>roducto 1</h3>
+					<span class="add-cart">
 						<i class="fa-solid fa-basket-shopping"></i>
-						<div class="content-shopping-cart">
-							<span class="text">Carrito</span>
-							<span class="number">(0)</span>
-						</div>
-					</div>
+					</span>
+					<p class="price">$4.60 <span>$5.30</span></p>
 				</div>
 			</div>
+			<!-- Producto 2 -->
+			<div class="card-product">
+				<div class="container-img">
+					<img
+						src="https://lh3.googleusercontent.com/pw/AP1GczMKVpA_ifQmpIh257AASuquE8BUXRqNrwn_PrmDtx0dM253XSnmtqhwcPwQmLDF5aL1t2HCSsx8dTZ3tVJqvrbVvXAmbKG8xQsJHQbpZkc0_G8xhpgf2XL_g8rTaTdgxOrvjhthatWmfMcMkWLtG1Y6rA=w999-h999-s-no-gm"
+						alt="Cafe incafe-ingles.jpg"
+					/>
+					<!--{{ MEDIA_URL }}images/cafe-ingles.jpg-->
+					<span class="discount">-22%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Producto 2</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.70 <span>$7.30</span></p>
+				</div>
+			</div>
+			<!--  -->
+			<div class="card-product">
+				<div class="container-img">
+					<img
+						src="{{ MEDIA_URL }}images/cafe-australiano.jpg"
+						alt="Cafe Australiano"
+					/>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<h3>Producto 3</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$3.20</p>
+				</div>
+			</div>
+			<!--  -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/cafe-helado.jpg" alt="Cafe Helado" />
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Producto 4</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.60</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			<div class="container-navbar">
-				<nav class="navbar container">
-					<i class="fa-solid fa-bars"></i>
-					<ul class="menu">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Alta joyería</a></li>
-						<li><a href="#">Joyeía</a></li>
-						<li><a href="#">Regalos</a></li>
-						<li><a href="#">Descubre</a></li>
-						<li><a href="#">Conocenos</a></li>
-					</ul>
+	<section class="gallery">
+		<img
+			src="https://lh3.googleusercontent.com/pw/AP1GczMU65WqHImjAkNfQWiTAjDrS4srTb5w4_IsIKFevnH4gUSFTwvxGMM4ka5lMXNh87zO280bvQWHRY3pcdCo_AyL_QR9hmaDTBxL8Lx_CEd7GrtRRe2odpA5ARkp-Kz6eAUG4Zn6j3AFvNlYkhX00g0MVw=w449-h999-s-no-gm"
+			alt="Gallery Img1"
+			class="gallery-img-1"
+		/>
+		<!--{{ MEDIA_URL }}images/gallery1.jpg-->
+		<img
+			src="https://lh3.googleusercontent.com/pw/AP1GczMAMEw8d8tfjeRt8infKumgk2XkLf_h3akKOB_aEGdlFBWgytGc-siWAq1TuEC6C2y3PiQXgz5q43eQEa5LWe9cKA3PrDPAh2f7twji0-iRkesPRllEPcfs3_28OuyK7rZb7UoLM1psjBUZVSAlQiAkWw=w450-h999-s-no-gm"
+			alt="Gallery Img2"
+			class="gallery-img-2"
+		/>
+		<!--{{ MEDIA_URL }}images/gallery2.jpg-->
+		<img
+			src="https://lh3.googleusercontent.com/pw/AP1GczMjIkFifGzKs8E9Og4RM9HgzxuJu7_ZXBHypSUCc6fTxFIfOCU2o6XYt_rD-yRQajDYMkeLX5sx32KJiMF47Nw1f8HHCHwHl7qhGC38CQRejasCwBUh0GVqj6Q8whByl42suYbluT1uZHa2IgT_Q-7pTQ=w999-h999-s-no-gm"
+			alt="Gallery Img3"
+			class="gallery-img-3"
+		/>
+		<!--{{ MEDIA_URL }}images/gallery3.jpg-->
+		<img
+			src="https://lh3.googleusercontent.com/pw/AP1GczPCw-gJ_oqvAPPoDjr3WtQ1WD85CNUnIMGpuIqsl2sBB9njylrTjUfb7quC1hdlQjgjEwQX6UhelHTyFbsjiX5rE28qJnOMsUJ_bU0orHmXs1plihcNqDhSQY12I8U_m1-ikK1FfXrZRsoAcRfQGej3Cw=w999-h999-s-no-gm"
+			alt="Gallery Img4"
+			class="gallery-img-4"
+		/>
+		<!--{{ MEDIA_URL }}images/gallery4.jpg-->
+		<img
+			src="https://lh3.googleusercontent.com/pw/AP1GczN-bpnXBAI9hZEwuhCin1lECgFDTRRGOT3K92cgAJwIlcjtHBW8i40XHiU6vcEywTOT_Ovdp-ZIk10aGKFukv6JBTSeGLdjH_LTkD063S3hBmPxd-R1XWu7j95zuB4cF7c8kGUenhkIBbLyoFUHE6Iacg=w552-h556-s-no-gm"
+			alt="Gallery Img5"
+			class="gallery-img-5"
+		/>
+		<!--{{ MEDIA_URL }}images/gallery5.jpg-->
+	</section>
 
-					<form class="search-form">
-						<input type="search" placeholder="Buscar..." />
-						<button class="btn-search">
+	<section class="container specials">
+		<h1 class="heading-1">Colecciónes</h1>
+
+		<div class="container-products">
+			<!-- Producto 1 -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/cafe-irish.jpg" alt="Cafe Irish" />
+					<span class="discount">-13%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cafe Irish</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$4.60 <span>$5.30</span></p>
+				</div>
+			</div>
+			<!-- Producto 2 -->
+			<div class="card-product">
+				<div class="container-img">
+					<img
+						src="{{ MEDIA_URL }}images/cafe-ingles.jpg"
+						alt="Cafe incafe-ingles.jpg"
+					/>
+					<span class="discount">-22%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cafe Inglés</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.70 <span>$7.30</span></p>
+				</div>
+			</div>
+			<!--  -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/cafe-viena.jpg" alt="Cafe Viena" />
+					<span class="discount">-30%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<h3>Cafe Viena</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$3.85 <span>$5.50</span></p>
+				</div>
+			</div>
+			<!--  -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/cafe-liqueurs.jpg" alt="Cafe Liqueurs" />
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cafe Liqueurs</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.60</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container blogs">
+		<h1 class="heading-1">Últimos Blogs</h1>
+
+		<div class="container-blogs">
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/blog-1.jpg" alt="Imagen Blog 1" />
+					<div class="button-group-blog">
+						<span>
 							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-					</form>
-				</nav>
-			</div>
-		</header>
-
-		<section class="banner" style="background-image: linear-gradient(100deg, #000000, #00000020), url('{{ MEDIA_URL }}images/banner.jpg');">
-			<div class="content-banner">
-				<p>Para Febrero</p>
-				<h2>100% Plata Méxicana <br />Anillo</h2>
-				<a href="#">Comprar ahora</a>
-			</div>
-		</section>
-
-		<main class="main-content">
-			<section class="container container-features">
-				<div class="card-feature">
-					<i class="fa-solid fa-plane-up"></i>
-					<div class="feature-content">
-						<span>Envío gratuito a nivel mundial</span>
-						<p>En pedido superior a $1,500</p>
+						</span>
+						<span>
+							<i class="fa-solid fa-link"></i>
+						</span>
 					</div>
 				</div>
-				<div class="card-feature">
-					<i class="fa-solid fa-wallet"></i>
-					<div class="feature-content">
-						<span>Contrareembolso</span>
-						<p>100% garantía de devolución de dinero</p>
-					</div>
-				</div>
-				<div class="card-feature">
-					<i class="fa-solid fa-gift"></i>
-					<div class="feature-content">
-						<span>Tarjeta regalo especial</span>
-						<p>Ofrece bonos especiales con regalo</p>
-					</div>
-				</div>
-				<div class="card-feature">
-					<i class="fa-solid fa-headset"></i>
-					<div class="feature-content">
-						<span>Servicio al cliente 24/7</span>
-						<p>LLámenos 24/7 al 123-456-7890</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="container top-categories">
-				<h1 class="heading-1">Mejores Categorías</h1>
-				<div class="container-categories">
-					<div class="card-category category-moca" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/moca-category.jpg');">
-						<p>Anillos</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-expreso" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/expreso-category.jpg');">
-						<p>Pulceras</p>
-						<span>Ver más</span>
-					</div>
-					<div class="card-category category-capuchino" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ MEDIA_URL }}images/capuchino-category.jpg');">
-						<p>Anillos de Boda</p>
-						<span>Ver más</span>
-					</div>
-				</div>
-			</section>
-
-			<section class="container top-products">
-				<h1 class="heading-1">Mejores Productos</h1>
-
-				<div class="container-options">
-					<span class="active">Destacados</span>
-					<span>Más recientes</span>
-					<span>Mejores Vendidos</span>
-				</div>
-
-				<div class="container-products">
-					<!-- Producto 1 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/cafe-irish.jpg" alt="Cafe Irish" />
-							<span class="discount">-13%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>roducto 1</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$4.60 <span>$5.30</span></p>
-						</div>
-					</div>
-					<!-- Producto 2 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img
-								src="{{ MEDIA_URL }}images/cafe-ingles.jpg"
-								alt="Cafe incafe-ingles.jpg"
-							/>
-							<span class="discount">-22%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Producto 2</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$5.70 <span>$7.30</span></p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img
-								src="{{ MEDIA_URL }}images/cafe-australiano.jpg"
-								alt="Cafe Australiano"
-							/>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							</div>
-							<h3>Producto 3</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$3.20</p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/cafe-helado.jpg" alt="Cafe Helado" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Producto 4</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$5.60</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="gallery">
-				<img
-					src="{{ MEDIA_URL }}images/gallery1.jpg"
-					alt="Gallery Img1"
-					class="gallery-img-1"
-				/><img
-					src="{{ MEDIA_URL }}images/gallery2.jpg"
-					alt="Gallery Img2"
-					class="gallery-img-2"
-				/><img
-					src="{{ MEDIA_URL }}images/gallery3.jpg"
-					alt="Gallery Img3"
-					class="gallery-img-3"
-				/><img
-					src="{{ MEDIA_URL }}images/gallery4.jpg"
-					alt="Gallery Img4"
-					class="gallery-img-4"
-				/><img
-					src="{{ MEDIA_URL }}images/gallery5.jpg"
-					alt="Gallery Img5"
-					class="gallery-img-5"
-				/>
-			</section>
-
-			<section class="container specials">
-				<h1 class="heading-1">Colecciónes</h1>
-
-				<div class="container-products">
-					<!-- Producto 1 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/cafe-irish.jpg" alt="Cafe Irish" />
-							<span class="discount">-13%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Cafe Irish</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$4.60 <span>$5.30</span></p>
-						</div>
-					</div>
-					<!-- Producto 2 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img
-								src="{{ MEDIA_URL }}images/cafe-ingles.jpg"
-								alt="Cafe incafe-ingles.jpg"
-							/>
-							<span class="discount">-22%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Cafe Inglés</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$5.70 <span>$7.30</span></p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/cafe-viena.jpg" alt="Cafe Viena" />
-							<span class="discount">-30%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							</div>
-							<h3>Cafe Viena</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$3.85 <span>$5.50</span></p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/cafe-liqueurs.jpg" alt="Cafe Liqueurs" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Cafe Liqueurs</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$5.60</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container blogs">
-				<h1 class="heading-1">Últimos Blogs</h1>
-
-				<div class="container-blogs">
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/blog-1.jpg" alt="Imagen Blog 1" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Lorem, ipsum dolor sit</h3>
-							<span>29 Noviembre 2022</span>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Iste, molestiae! Ratione et, dolore ipsum
-								quaerat iure illum reprehenderit non maxime amet dolor
-								voluptas facilis corporis, consequatur eius est sunt
-								suscipit?
-							</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/blog-2.jpg" alt="Imagen Blog 2" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Lorem, ipsum dolor sit</h3>
-							<span>29 Noviembre 2022</span>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Iste, molestiae! Ratione et, dolore ipsum
-								quaerat iure illum reprehenderit non maxime amet dolor
-								voluptas facilis corporis, consequatur eius est sunt
-								suscipit?
-							</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
-					<div class="card-blog">
-						<div class="container-img">
-							<img src="{{ MEDIA_URL }}images/blog-3.jpg" alt="Imagen Blog 3" />
-							<div class="button-group-blog">
-								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-blog">
-							<h3>Lorem, ipsum dolor sit</h3>
-							<span>29 Noviembre 2022</span>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Iste, molestiae! Ratione et, dolore ipsum
-								quaerat iure illum reprehenderit non maxime amet dolor
-								voluptas facilis corporis, consequatur eius est sunt
-								suscipit?
-							</p>
-							<div class="btn-read-more">Leer más</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<div class="container container-footer">
-				<div class="menu-footer">
-					<div class="contact-info">
-						<p class="title-footer">Información de Contacto</p>
-						<ul>
-							<li>
-								Dirección: 71 Pennington Lane Vernon Rockville, CT
-								06066
-							</li>
-							<li>Teléfono: 123-456-7890</li>
-							<li>Fax: 55555300</li>
-							<li>EmaiL: baristas@support.com</li>
-						</ul>
-						<div class="social-icons">
-							<span class="facebook">
-								<i class="fa-brands fa-facebook-f"></i>
-							</span>
-							<span class="twitter">
-								<i class="fa-brands fa-twitter"></i>
-							</span>
-							<span class="youtube">
-								<i class="fa-brands fa-youtube"></i>
-							</span>
-							<span class="pinterest">
-								<i class="fa-brands fa-pinterest-p"></i>
-							</span>
-							<span class="instagram">
-								<i class="fa-brands fa-instagram"></i>
-							</span>
-						</div>
-					</div>
-
-					<div class="information">
-						<p class="title-footer">Información</p>
-						<ul>
-							<li><a href="#">Acerca de Nosotros</a></li>
-							<li><a href="#">Información Delivery</a></li>
-							<li><a href="#">Politicas de Privacidad</a></li>
-							<li><a href="#">Términos y condiciones</a></li>
-							<li><a href="#">Contactános</a></li>
-						</ul>
-					</div>
-
-					<div class="my-account">
-						<p class="title-footer">Mi cuenta</p>
-
-						<ul>
-							<li><a href="#">Mi cuenta</a></li>
-							<li><a href="#">Historial de ordenes</a></li>
-							<li><a href="#">Lista de deseos</a></li>
-							<li><a href="#">Boletín</a></li>
-							<li><a href="#">Reembolsos</a></li>
-						</ul>
-					</div>
-
-					<div class="newsletter">
-						<p class="title-footer">Boletín informativo</p>
-
-						<div class="content">
-							<p>
-								Suscríbete a nuestros boletines ahora y mantente al
-								día con nuevas colecciones y ofertas exclusivas.
-							</p>
-							<input type="email" placeholder="Ingresa el correo aquí...">
-							<button>Suscríbete</button>
-						</div>
-					</div>
-				</div>
-
-				<div class="copyright">
+				<div class="content-blog">
+					<h3>Lorem, ipsum dolor sit</h3>
+					<span>29 Noviembre 2022</span>
 					<p>
-						Desarrollado por Programación para el mundo &copy; 2022
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Iste, molestiae! Ratione et, dolore ipsum
+						quaerat iure illum reprehenderit non maxime amet dolor
+						voluptas facilis corporis, consequatur eius est sunt
+						suscipit?
 					</p>
-
-					<img src="{{ MEDIA_URL }}images/payment.png" alt="Pagos">
+					<div class="btn-read-more">Leer más</div>
 				</div>
 			</div>
-		</footer>
-
-		<script
-			src="https://kit.fontawesome.com/81581fb069.js"
-			crossorigin="anonymous"
-		></script>
-	</body>
-</html>
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/blog-2.jpg" alt="Imagen Blog 2" />
+					<div class="button-group-blog">
+						<span>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-link"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-blog">
+					<h3>Lorem, ipsum dolor sit</h3>
+					<span>29 Noviembre 2022</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Iste, molestiae! Ratione et, dolore ipsum
+						quaerat iure illum reprehenderit non maxime amet dolor
+						voluptas facilis corporis, consequatur eius est sunt
+						suscipit?
+					</p>
+					<div class="btn-read-more">Leer más</div>
+				</div>
+			</div>
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="{{ MEDIA_URL }}images/blog-3.jpg" alt="Imagen Blog 3" />
+					<div class="button-group-blog">
+						<span>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-link"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-blog">
+					<h3>Lorem, ipsum dolor sit</h3>
+					<span>29 Noviembre 2022</span>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Iste, molestiae! Ratione et, dolore ipsum
+						quaerat iure illum reprehenderit non maxime amet dolor
+						voluptas facilis corporis, consequatur eius est sunt
+						suscipit?
+					</p>
+					<div class="btn-read-more">Leer más</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock content %}
